@@ -44,7 +44,7 @@ today = datetime.now()
 
 pixel_config = {
     "date": today.strftime("%Y%m%d"),
-    "quantity": input("How many pages did you read today? ")
+    "quantity": input("How many hours did you meditate today? ")
 }
 
 response = requests.post(url=post_pixel_endpoint,json=pixel_config,headers=headers)
